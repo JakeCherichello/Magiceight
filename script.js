@@ -3,7 +3,7 @@ function shakeMagic8Ball() {
     if (question === null) {
         document.getElementById('response-text').innerText = `MUST ASK A QUESTION`
         document.getElementById('response-text').classList = `lead text-danger`
-        document.getElementById('response-image').src = `#badimage`// fix this
+        document.getElementById('response-image').src = "images/Angry-Man.webp"
     }
     if (!question.trim()) {
         alert(`Enter a Valid Question`)
@@ -17,55 +17,55 @@ function shakeMagic8Ball() {
     switch (randomNumber) {
         case 0:
             answer = "Yes"
-            image = "yes-image.jpg"
+            image = "images/happy.avif"
             color = "text-success"
             break
 
         case 1:
             answer = "No"
-            image = "yes-image.jpg"
+            image = "images/sad.jpg"
             color = "text-danger"
             break
 
         case 2:
             answer = "It is certain"
-            image = "yes-image.jpg"
+            image = "images/happy.jpg"
             color = "text-success"
             break
 
         case 3:
             answer = "Reply hazy try again"
-            image = "yes-image.jpg"
-            color = "text-success"
+            image = "images/confused.jpg"
+            color = "text-warning"
             break
 
         case 3:
             answer = "Cannot predict now"
-            image = "yes-image.jpg"
-            color = "text-success"
+            image = "images/confused1.avif"
+            color = "text-warning"
             break
 
         case 4:
             answer = "Do not count on it"
-            image = "yes-image.jpg"
+            image = "images/sad1.jpg"
             color = "text-danger"
             break
 
         case 5:
             answer = "My sources say no"
-            image = "yes-image.jpg"
-            color = "text-success"
+            image = "images/sad2.jpg"
+            color = "text-danger"
             break
 
         case 6:
             answer = "Outlook not so good"
-            image = "yes-image.jpg"
+            image = "images/SAD3.jpg"
             color = "text-danger"
             break
 
         case 7:
             answer = "Signs point to yes"
-            image = "yes-image.jpg"
+            image = "images/happy2.jpg"
             color = "text-success"
             break
     }
@@ -73,7 +73,6 @@ function shakeMagic8Ball() {
     responseText.innerText = answer;
     responseText.classList = `display-4 ${color}`;
     document.getElementById(`response-image`).src = image;
-
 
 }
 
